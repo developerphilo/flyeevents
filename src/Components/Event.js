@@ -4,7 +4,7 @@ function Event([key,title,img,venue,start,end,info]) {
     return (
         <div>
 
-            <div className="card">
+            {/* <div className="card">
                 <div className="card-body">
                     <h1 className="card-title">{title}</h1>
                     <img className="card-img-top" style={{width: '20rem',height : '250px'}} src={img} alt="" /> <br />
@@ -18,7 +18,7 @@ function Event([key,title,img,venue,start,end,info]) {
                     <a href={info} className="card-link">Book Here</a>
         
                 </div>
-            </div>
+            </div> */}
 
             
         </div>

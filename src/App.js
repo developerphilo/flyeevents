@@ -9,10 +9,11 @@ import './App.css';
   
 const App = ()=> {
 
-  const APP_KEY = "A7CTg8gGTdJGP0nPPOYfCgcHoVG2Kz0f";
+  require('dotenv').config();
+  const APP_KEY = process.env.APP_KEY;
   const[state,setState] =useState({
-    s:"",
-    allevents:[]
+    s:"chris",
+    events:[]
     
   })
 
@@ -22,7 +23,7 @@ const App = ()=> {
     setState(prevState =>{
       return {...prevState,s:typed}
     })
-    console.log(state.s);
+    // console.log(state.s);
   };
   //confirmes key enter is pressed and a fetch query is entered and then sets state of events
   const Search = (e) =>{
@@ -31,13 +32,12 @@ const App = ()=> {
             .then(responce => responce.json())
             .then(data =>{
               let events = data._embedded.events;
-              console.log(events);
+              
               setState(prevState =>{
-                return {...prevState,allevents:events}
+                return {...prevState,events:events}
               }) 
-           })
-
-      
+              console.log(events);
+           })   
     }
 
   }
@@ -49,7 +49,7 @@ const App = ()=> {
                     <Form handleInput={handleInput} Search={Search} />
                 </div>
                 <div>
-                    <Events allevents={state.allevents} />
+                    <Events allevents={state.events} />
                     <Footer  />
                 </div>
                 

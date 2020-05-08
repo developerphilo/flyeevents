@@ -2,11 +2,11 @@ import React from 'react';
 import Event from './Event';
 
 
-const Events = ({allevents}) =>{
+const Events = ({events}) =>{
 
     return(
               <div>
-                {allevents.map(event =>(
+                {/* {events.map(event =>(
                   <Event 
                   key={event.id}
                   title={event.name}
@@ -16,7 +16,7 @@ const Events = ({allevents}) =>{
                   end={event.sales.public.endDateTime}
                   info={event.url}
                   />
-                ))}
+                ))} */}
               </div>
 
 
