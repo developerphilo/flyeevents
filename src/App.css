@@ -2,7 +2,9 @@
 body{
   background-color: #223343;
   color: white;
-  font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+  font-family: 'Muli',sans-serif;
+  /* font-family:'Lucida Sans', sans-serif; */
+  /* font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif; */
   font-size: 14px;
 }
 .viewer{
@@ -38,6 +40,9 @@ input{
   font-size: 17px;
   padding-bottom: 13px;
 }
+input:focus{
+  box-shadow: 0 0 0 0.2rem rgba(96, 231, 18, 0.25);
+}
 button{
   padding:17px 20px;
   color: rgb(31, 204, 31);
@@ -58,16 +63,27 @@ button{
     text-shadow: none;
 }
 
-.footer div{
+.footer{
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+ 
 }
 .footerhead{
   text-align: center;
 }
 .footer div i{
+  padding: 0px 5px;
+  margin: 0px 25px;
+}
+.footer div i{
   cursor: pointer;
-  padding-left: 10px;
+
+}
+.sub{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
 }

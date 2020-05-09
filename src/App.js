@@ -49,7 +49,7 @@ const App = ()=> {
                     <Form handleInput={handleInput} Search={Search} />
                 </div>
                 <div>
-                    <Events allevents={state.events} />
+                    <Events events={state.events} />
                     <Footer  />
                 </div>
                 

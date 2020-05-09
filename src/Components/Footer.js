@@ -19,14 +19,20 @@ function Footer() {
                         <div>
                             <p>Contact</p><i className="fa fa-twitter" aria-hidden="true"> </i>
                         </div>     
-
                         <div>
-                            <p>developerphilo@gmail.com</p>
+                            <p>Instagram</p><i className="fa fa-twitter" aria-hidden="true"> </i>
+                        </div>
+                        <div>
+                            <p>Facebook</p><i className="fa fa-twitter" aria-hidden="true"> </i>
                         </div> 
-                        <div>
-                            <p>Subscribe to our mailing list</p>
-                        </div>       
+                        
+                              
                 </div>
+                        <div className="sub">
+                            <h3>Subscribe to our Mailing list</h3>
+                            <p>Made with love with React</p>
+                            <p>developerphilo@gmail.com</p>                      
+                        </div> 
             
         </div>
     );
