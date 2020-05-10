@@ -25,7 +25,7 @@ const App = ()=> {
     })
     // console.log(state.s);
   };
-  //confirmes key enter is pressed and a fetch query is entered and then sets state of events
+  //confirms key enter is pressed and a fetch query is entered and then sets state of events
   const Search = (e) =>{
     if (e.key === "Enter") {
             fetch(`https://app.ticketmaster.com/discovery/v2/events?apikey=${APP_KEY}&keyword=${state.s}`)
