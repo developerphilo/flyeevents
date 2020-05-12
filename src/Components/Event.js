@@ -2,7 +2,7 @@ import React from 'react';
 
 function Event([key,title,img,venue,start,end,info]) {
     return (
-        <div>
+        <div className="event">
 
             {/* <div className="card">
                 <div className="card-body">

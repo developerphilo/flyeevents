@@ -5,7 +5,7 @@ import Event from './Event';
 const Events = ({events}) =>{
 
     return(
-              <div>
+              <div className="events">
                 {/* {events.map(event =>(
                   <Event 
                   key={event.id}
