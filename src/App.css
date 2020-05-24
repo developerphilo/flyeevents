@@ -2,9 +2,7 @@
 body{
   background-color: #223343;
   color: white;
-  font-family: 'Muli',sans-serif;
-  /* font-family:'Lucida Sans', sans-serif; */
-  /* font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif; */
+  font-family: 'monteserrat',sans-serif;
   font-size: 14px;
 }
 .viewer{
@@ -62,6 +60,29 @@ button{
     text-indent: 0px;
     text-shadow: none;
 }
+/* styling of the .events sections and the returnd data  */
+
+.events{
+  display: flex;
+  flex-wrap: wrap;
+}
+.events .event{
+  /* min-width: 250px; */
+  height: 300px;
+  width: 25rem;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+}
+.events .event img{
+  cursor: pointer;
+}
+.event .event h2{
+  flex-wrap: wrap;
+  width: 250px;
+}
+/* styling of the footer section */
 
 .footer{
   display: flex;

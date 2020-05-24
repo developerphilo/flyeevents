@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This Application Was created with `React` JS:
 
-### `Fly Events Application`
+### Fly-Events Application
 
 Developed this application to help people find info relating to events and booking for reservation
+
+### Check The Application Here
+
+This application is hosted with [@Netlify](https://flyeventseach.netlify.app).
+
+

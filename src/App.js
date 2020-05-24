@@ -10,36 +10,44 @@ import './App.css';
 const App = ()=> {
 
   require('dotenv').config();
-  const APP_KEY = process.env.APP_KEY;
+  const APP_KEY = 'A7CTg8gGTdJGP0nPPOYfCgcHoVG2Kz0f';
   const[state,setState] =useState({
-    s:"chris",
+    s:"",
     events:[]
     
-  })
-
+  });
+  // const [events,setEvents] = useState([]);
   //handles the input and updates the search state
   const handleInput = (e) =>{
     let typed = e.target.value;
-    setState(prevState =>{
-      return {...prevState,s:typed}
+    
+    setState( prevState =>{
+      return { ...prevState,s:typed}
+      
     })
+    
     // console.log(state.s);
+    
   };
-  //confirms key enter is pressed and a fetch query is entered and then sets state of events
+  //search function and updating the events state
   const Search = (e) =>{
     if (e.key === "Enter") {
             fetch(`https://app.ticketmaster.com/discovery/v2/events?apikey=${APP_KEY}&keyword=${state.s}`)
             .then(responce => responce.json())
             .then(data =>{
               let events = data._embedded.events;
-              
-              setState(prevState =>{
-                return {...prevState,events:events}
-              }) 
               console.log(events);
-           })   
-    }
+              
+              setState( prevState =>{
+                return{ ...prevState, events: events}
+                
+              })
+              console.log(state.events);
 
+           }) 
+             
+    }
+    
   }
   
   return (
@@ -50,8 +58,9 @@ const App = ()=> {
                 </div>
                 <div>
                     <Events events={state.events} />
-                    <Footer  />
+                    
                 </div>
+                <Footer  />
                 
         </div>
   );
