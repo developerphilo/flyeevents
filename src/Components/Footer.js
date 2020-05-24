@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Footer() {
     return (
         <div >
@@ -10,7 +11,7 @@ function Footer() {
                 <div className="footer">
                         
                         <div>
-                            <p>Twitter</p><a href="https://twitter.com/flyevents" />   <i className="fa fa-twitter" aria-hidden="true"></i>
+                            <p>Twitter</p><a href="https://twitter.com/flyevents" />    <i className="fa fa-twitter" aria-hidden="true"></i>
                         </div>
                         
                         <div>

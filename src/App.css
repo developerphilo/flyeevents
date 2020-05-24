@@ -82,6 +82,11 @@ button{
   flex-wrap: wrap;
   width: 250px;
 }
+.event a{
+  padding: 15px 30px;
+  text-decoration: none;
+  color: rgb(16, 223, 61);
+}
 /* styling of the footer section */
 
 .footer{

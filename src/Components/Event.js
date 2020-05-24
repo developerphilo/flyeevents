@@ -13,6 +13,7 @@ const Event = ({event}) =>{
                     <span >End Time</span>
                     <p >{event.sales.public.endDateTime}</p>
                     <a href={event.url}>Book Here</a> */}
+                    <a href={event.url}>Book Here</a> 
                 </div>
     )
 }
